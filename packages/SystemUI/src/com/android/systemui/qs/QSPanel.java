@@ -115,7 +115,6 @@ public class QSPanel extends LinearLayout implements Tunable {
 
     private Record mDetailRecord;
 
-    private BrightnessMirrorController mBrightnessMirrorController;
     private LinearLayout mHorizontalLinearLayout;
     protected LinearLayout mHorizontalContentContainer;
 
@@ -285,9 +284,6 @@ public class QSPanel extends LinearLayout implements Tunable {
     }
 
     private void updateViewPositions() {
-        if (mChildrenLayoutTop == null || mChildrenLayoutTop.isEmpty()) {
-            return;
-        }
         // Adjust view positions based on tile squishing
         int tileHeightOffset = mTileLayout.getTilesHeight() - mTileLayout.getHeight();
 
